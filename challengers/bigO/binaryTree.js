@@ -73,10 +73,10 @@ function simetricRun() {
 
     function getNext(node) {
         if (node) {
-            console.log('next',  node.Value)            
-            
+            console.log('next', node.Value)
+
             getNext(node);
-        }   
+        }
     }
 
     tree.forEach(node => {
@@ -87,7 +87,7 @@ function simetricRun() {
             console.log('root', node.Value)
             console.log('direito', node.Dir.Value)
             console.log('next dir', getNext(node.Dir))
-        }        
+        }
     });
 }
 
